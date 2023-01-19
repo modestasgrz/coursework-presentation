@@ -1,0 +1,57 @@
+\documentclass{VUMIFSlides}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyvrb}
+\usepackage{bm}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{textpos} % FOR LOGO
+\usepackage[english,lithuanian]{babel}
+\usepackage{animate}
+\usepackage{caption} 
+\usepackage{subfig}
+
+\hypersetup{
+    pdfauthor=Vardenis Pavardenis,
+    linktoc=all,     %set to all if you want both sections and subsections linked
+}
+
+\title[Title lower]{Title title}
+\subtitle{Presentation}
+\author[Author lower]{\texorpdfstring{Author: \\ Supervisor: assoc. prof. Linas Petkevičius}{Author: , Supervisor: assoc. prof. Linas Petkevičius}} 
+\institute[VU-MIF]{Vilnius University \\ Faculty of Mathematics and Informatics \\ Institute of Computer Science}
+\date[2023-lower-XXX]{2023-title-XXX}
+
+\bibliography{bib}
+
+% Let's get started
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+% Content
+\input{tex/0content}
+% Introduction
+\input{tex/1RevisedGoals.tex}
+% Revised Dataset
+%\input{tex/2Dataset}
+% Methods used
+\input{tex/3Methods_used}
+% Analysis results
+\input{tex/4Results}
+% Benefits / conclusion
+\input{tex/5Benefits}
+% Bibliography
+\begin{frame}[allowframebreaks]{Bibliography}
+    \printbibliography 
+\end{frame}
+ 
+% \appendix
+
+\end{document}
