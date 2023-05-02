@@ -1,3 +1,56 @@
+\begin{frame}[c]{Įrankiai ir mokymas}
+    \begin{minipage}[t]{0.65\textwidth}
+        CLIP mokymas:
+        \begin{itemize}
+            \item Kryžminės entropijos nuostolių funkcija
+            \item 200 epochų
+            \item Adam optimizatorius
+            \item Mokymo žingsnio kosinusinio
+kitimo planuotojas (\textit{cosine learning rate scheduler})
+        \end{itemize}
+        Difuzerio mokymas:
+        \begin{itemize}
+            \item Vidutinės
+kvadratinės paklaidos nuostolių funkcija
+            \item 200 epochų
+            \item AdamW optimizatorius
+            \item Mokymo žingsnio kosinusinio
+kitimo planuotojas (\textit{cosine learning rate scheduler})
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.29\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.75\textwidth]{img/Google_Colaboratory_SVG_Logo.svg.png}
+        \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.75\textwidth]{img/Pytorch_logo.png}
+        \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.75\textwidth]{img/6308b84661b3e2a522f01468.png}
+        \end{figure}
+    \end{minipage}
+\end{frame}
+\begin{frame}[c]{Rezultatai}
+    \begin{minipage}[t]{0.49\textwidth}
+        \begin{itemize}
+            \item CLIP modelis grafeno sintezės reakcijos rezultato nuotraukas klasifikuoja apytiksliai 16.67\% įsitikinimo (\textit{confidence}) lygmeniu.
+            \item Difuzijos modelio optimali mokymo žingsnio reikšmė $3 * 10^{-4}$.
+            \item Difuzijos modelio optimali mokymo žingsnio planuotojo     apšilimo reikšmė 0\%.
+            \item Difuzijos modelio generuojamos nuotraukos panašios į mokymo duomenų nuotraukas.
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.49\textwidth}
+       \begin{figure}
+            \includegraphics[width=1\textwidth]{img/graphene-diffuser-inference.png}
+            \caption{Generatyviniu difuzijos modeliu sugeneruoti grafeno vaizdai}
+        \end{figure}
+    \end{minipage}
+\end{frame}
+
+\begin{comment}
 \begin{frame}[c]{Visualization I}
     \begin{figure}
         \includegraphics[width=1\textwidth]{img/sample1.png}
@@ -49,4 +102,4 @@
         \end{animateinline}
     \end{figure}
 \end{frame}
- 
+\end{comment}
